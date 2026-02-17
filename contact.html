@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ติดต่อเรา</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f6f6f6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 16px;
+        }
+
+        .box {
+            background: #fff;
+            padding: 16px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 6px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            min-height: 120px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .btn {
+            margin-top: 12px;
+            width: 100%;
+            padding: 10px;
+            border: 0;
+            border-radius: 8px;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #111;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 700px) {
+            .row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>ติดต่อเรา</h1>
+        <p>หน้าแบบฟอร์มสำหรับส่งข้อความ</p>
+    </header>
+
+    <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="products.html">สินค้า</a>
+        <a href="contact.html">ติดต่อเรา</a>
+        <a href="profile.html">โปรไฟล์</a>
+    </nav>
+
+    <main class="container">
+        <section class="box">
+            <h2>ข้อมูลติดต่อ</h2>
+            <p>อีเมล: promminkew@gmail.com</p>
+            <p>โทร: 095-1680544</p>
+            <p>ที่อยู่: ขอนแก่น</p>
+        </section>
+
+        <section class="box">
+            <h2>ส่งข้อความหาเรา</h2>
+            <form>
+                <div class="row">
+                    <div>
+                        <label>ชื่อ</label>
+                        <input type="text" placeholder="พิมพ์ชื่อของคุณ" />
+                    </div>
+                    <div>
+                        <label>อีเมล</label>
+                        <input type="email" placeholder="you@email.com" />
+                    </div>
+                </div>
+
+                <label>ข้อความ</label>
+                <textarea placeholder="พิมพ์ข้อความที่ต้องการติดต่อ"></textarea>
+
+                <button class="btn" type="button">ส่งข้อความ (เดโม)</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 เว็บไซต์ของฉัน</p>
+    </footer>
+</body>
+
+</html>

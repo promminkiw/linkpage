@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>หน้าหลัก</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f6f6f6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 16px;
+        }
+
+        .hero {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .hero h2 {
+            margin-top: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 0 0 8px;
+            font-size: 18px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* มือใหม่: ถ้าจอเล็ก ให้เรียงเป็นคอลัมน์เดียว */
+        @media (max-width: 700px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>เว็บไซต์ของฉัน</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="products.html">สินค้า</a>
+        <a href="contact.html">ติดต่อเรา</a>
+        <a href="profile.html">โปรไฟล์</a>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h2>ยินดีต้อนรับ</h2>
+            <p>นี่คือหน้าแรก ใช้สำหรับแนะนำเว็บ และโชว์เนื้อหาคร่าว ๆ</p>
+
+            <div class="grid">
+                <article class="card">
+                    <h3>ไฮไลต์ 1</h3>
+                    <p>ทดลองเชื่อมเว็บหลายหน้า</p>
+                </article>
+
+                <article class="card">
+                    <h3>ไฮไลต์ 2</h3>
+                    <p>ทดลองเชื่อมเว็บหลายหน้า</p>
+                </article>
+
+                <article class="card">
+                    <h3>ไฮไลต์ 3</h3>
+                    <p>ทดลองเชื่อมเว็บหลายหน้า</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 เว็บไซต์ของฉัน</p>
+    </footer>
+</body>
+
+</html>

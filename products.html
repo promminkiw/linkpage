@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>สินค้า</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f6f6f6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 16px;
+        }
+
+        .title {
+            background: #fff;
+            padding: 16px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .product {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+        }
+
+        .imgbox {
+            height: 120px;
+            background: #ddd;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .price {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: 0;
+            border-radius: 8px;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #111;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 700px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>สินค้า</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="products.html">สินค้า</a>
+        <a href="contact.html">ติดต่อเรา</a>
+        <a href="profile.html">โปรไฟล์</a>
+    </nav>
+
+    <main class="container">
+        <section class="title">
+            <h2>รายการสินค้า</h2>
+            <p>ตัวอย่างการแบ่งเป็นการ์ด 3 คอลัมน์</p>
+        </section>
+
+        <section class="products">
+            <article class="product">
+                <div class="imgbox">รูปสินค้า</div>
+                <h3>สินค้า A</h3>
+                <p class="price">฿199</p>
+                <p>คำอธิบายสั้น ๆ ของสินค้า</p>
+                <button>เพิ่มลงตะกร้า</button>
+            </article>
+
+            <article class="product">
+                <div class="imgbox">รูปสินค้า</div>
+                <h3>สินค้า B</h3>
+                <p class="price">฿299</p>
+                <p>คำอธิบายสั้น ๆ ของสินค้า</p>
+                <button>เพิ่มลงตะกร้า</button>
+            </article>
+
+            <article class="product">
+                <div class="imgbox">รูปสินค้า</div>
+                <h3>สินค้า C</h3>
+                <p class="price">฿399</p>
+                <p>คำอธิบายสั้น ๆ ของสินค้า</p>
+                <button>เพิ่มลงตะกร้า</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 เว็บไซต์ของฉัน</p>
+    </footer>
+</body>
+
+</html>
